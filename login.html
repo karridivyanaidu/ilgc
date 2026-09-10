@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plaksha Login | ILGC</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <div class="logo-circle">I</div>
+        <span>ILGC Project Showcase</span>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Showcase</a>
+</header>
+
+<main class="login-page">
+
+    <section class="login-card">
+
+        <div class="login-icon">I</div>
+
+        <h1>Plaksha Login</h1>
+
+        <p class="subtitle">
+            Select your role to continue
+        </p>
+
+        <div class="role-options">
+
+            <button class="role-card" onclick="selectRole('faculty')">
+                <div class="role-icon">👨‍🏫</div>
+                <div>
+                    <h2>Faculty Mentor</h2>
+                    <p>Access student projects and mentorship tools</p>
+                </div>
+                <span class="arrow">→</span>
+            </button>
+
+            <button class="role-card" onclick="selectRole('ilgc')">
+                <div class="role-icon">🏛️</div>
+                <div>
+                    <h2>ILGC Mentor</h2>
+                    <p>Manage projects, mentors and institute activities</p>
+                </div>
+                <span class="arrow">→</span>
+            </button>
+
+            <button class="role-card" onclick="selectRole('student')">
+                <div class="role-icon">🎓</div>
+                <div>
+                    <h2>Student</h2>
+                    <p>View your projects and ILGC activities</p>
+                </div>
+                <span class="arrow">→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    © 2026 ILGC · Plaksha University
+</footer>
+
+<script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* ======================================================
+   STUDENT PORTAL — page-specific styles
+   Shared nav/panel/badge/modal/toast/profile primitives
+   live in portal-shared.css, loaded before this file.
+====================================================== */
+
+/* Mini interest rows on Home */
+
+.mini-interest-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #EEF3F2;
+}
+
+.mini-interest-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.mini-interest-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #17313A;
+}
+
+.mini-interest-domain {
+    font-size: 12px;
+    color: #789096;
+}
+
+/* My project card (inside Home panel) */
+
+.my-project-card {
+    border: 1px solid #D7E5E3;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.my-project-title {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #17313A;
+    margin-bottom: 6px;
+}
+
+.my-project-meta {
+    font-size: 13px;
+    color: #607278;
+    margin-bottom: 14px;
+}
+
+/* Discover controls */
+
+.discover-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    margin: 30px 0 16px;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 240px;
+    padding: 12px 16px;
+    border: 1px solid #D7E5E3;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #17313A;
+    background: #ffffff;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #0E6E68;
+}
+
+/* My Interests list */
+
+.interests-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.interest-row {
+    background: #ffffff;
+    border: 1px solid #D7E5E3;
+    border-radius: 14px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.interest-row-main {
+    min-width: 0;
+}
+
+.interest-row-title {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #17313A;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.interest-row-title:hover {
+    color: #0E6E68;
+}
+
+.interest-row-meta {
+    font-size: 13px;
+    color: #789096;
+}
+
+.interest-row-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.interest-date {
+    font-size: 12px;
+    color: #A2B2B6;
+    white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+    .interest-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .interest-row-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
